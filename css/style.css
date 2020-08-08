@@ -1,0 +1,370 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-black {
+    color: white;
+    background-color: black;
+}
+
+.bg-white {
+    color: black;
+    background-color: white;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* Header start */
+
+nav ul {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    margin: 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Header end */
+
+/* Jumbotron start */
+#jumbotron {
+    width: 100%;
+    padding: 80px 50px 120px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbotron img {
+    margin: 0px 50px 0px 100px;
+    width: 30%;
+    max-width: 320px;
+}
+
+#jumbotron article {
+    width: 35%;
+}
+
+#jumbotron article h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+#jumbotron article p {
+    font-size: 1.3rem;;
+}
+/* Jumbotron end */
+
+/* Features start */
+#features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#features h1 {
+    margin-top: 50px;
+}
+
+#features .row {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#features .row img{
+    width: 70%;
+    max-width: 480px;
+}
+
+#features .row p {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+/* Features end */
+
+/* FAQ start */
+#faq article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#faq article h1 {
+    margin-top: 50px;
+}
+
+#faq article .list-faq {
+    margin: 100px 0px;
+    width: 50%;
+    font-size: 2rem;
+}
+/* FAQ end */
+
+/* Commands start */
+#commands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#commands h1 {
+    margin-top: 50px;
+}
+
+#commands .row {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+th:nth-child(1) {
+    border-right: 1px solid white;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#commands .row img {
+    margin-left: 100px;
+    width: 30%;
+    max-width: 700px;
+}
+/* Commands end */
+
+/* Contact start */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact h1 {
+    margin-top: 50px;
+}
+
+#contact-detail {
+    width: 100%;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#contact-form{
+    width: 30%;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea{
+    margin: 10px 0px;
+    padding: 8px;
+}
+
+#contact-form input[type="submit"]{
+    width: 50%;
+    cursor: pointer;
+}
+
+#contact-form textarea {
+    resize: none;
+}
+
+#error-msg {
+    color: tomato;
+}
+
+#profile {
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-detail {
+    padding: 20px 10px;
+}
+
+#profile img {
+    width: 250px;
+}
+
+#profile-detail p, #profile-detail div {
+    margin: 10px 0px;
+}
+
+/* Contact end */
+
+/* footer start */
+footer {
+    text-align: center;
+    padding: 50px 0;
+}
+footer p {
+    padding: 5px;
+}
+/* footer end */
+
+/* aside start*/
+aside {
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    top: 40px;
+    right: 20px;
+}
+
+#qr {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px gray;
+}
+#qr p {
+    padding-top: 10px;
+    text-align: center;
+}
+#qr img {
+    width: 200px;
+}
+#toggle-qr p{
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 8px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#toggle-qr p:active{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+/* aside end */
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #jumbotron {
+        padding: 80px 0px 120px 0px;
+    }
+    #jumbotron img {
+        margin: 0px 25px 0px 0px;
+        width: 30%;
+        max-width: 320px;
+    }
+
+    #features .row {
+        flex-direction: column;
+    }
+    #features .row img{
+        width: 70%;
+        max-width: 240px;
+    }
+
+    #faq article .list-faq {
+        margin: 100px 0px;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    #commands .row {
+        flex-direction: column-reverse;
+    }
+    #commands .row img {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    table {
+        width: 70%;
+    }
+
+    #contact-detail {
+        width: 100%;
+        flex-direction: column;
+    }
+    #contact-form{
+        width: 70%;
+    }
+    #contact-form input, #contact-form textarea{
+        margin: 15px 0px;
+        padding: 10px;
+    }
+    #contact-form input[type="submit"] {
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #jumbotron {
+        padding: 60px 0px 100px 0px;
+        flex-direction: column;
+    }
+    #jumbotron img {
+        width: 50%;
+        margin: 20px 0px;
+    }
+    #jumbotron article {
+        width: 70%;
+        margin-top: 20px;
+    }
+    #jumbotron article h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    #profile-detail {
+        padding: 10px 10px;
+    }
+    #profile img {
+        width: 180px;
+    }
+}
