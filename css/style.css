@@ -248,7 +248,7 @@ footer p {
 /* footer end */
 
 /* aside start*/
-aside {
+#qr-popup {
     display: flex;
     position: fixed;
     z-index: 5;
