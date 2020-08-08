@@ -285,7 +285,7 @@ footer p {
 /* aside end */
 
 @media screen and (max-width: 768px) {
-    aside {
+    #qr-popup {
         display: none;
     }
     h1 {
