@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .bg-black {
     color: white;
     background-color: black;
@@ -171,6 +175,40 @@ tr:nth-child(even) {
 }
 /* Commands end */
 
+/* review start */
+#reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#reviews h1 {
+    margin-top: 50px;    
+}
+
+review-list {
+    margin: 50px;  
+    display: flex;
+    flex-direction: row;
+}
+
+review-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 30px;
+}
+
+review-item .review-info{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+}
+/* review end */
+
 /* Contact start */
 #contact {
     display: flex;
@@ -325,6 +363,10 @@ footer p {
     }
     table {
         width: 70%;
+    }
+
+    review-list {
+        flex-direction: column;
     }
 
     #contact-detail {

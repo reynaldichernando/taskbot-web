@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
     <title>TaskBot</title>
 </head>
 
@@ -16,13 +14,14 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#faq">F.A.Q.</a></li>
                 <li><a href="#commands">Commands</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="jumbotron" class="bg-black">
-            <img src="./asset/1.png" alt="TaskBot">
+            <img src="https://taskbot-sample.azurewebsites.net/static/1.png" alt="TaskBot">
             <article>
                 <h1>TaskBot</h1>
                 <p>The Line&reg; chatbot that can help you get through your daily tasks, do things better, get more
@@ -34,15 +33,15 @@
             <h1>Features</h1>
             <div class="row">
                 <div class="card">
-                    <img src="./asset/1.png" alt="Add Feature">
+                    <img src="https://taskbot-sample.azurewebsites.net/static/1.png" alt="Add Feature">
                     <p>Add</p>
                 </div>
                 <div class="card">
-                    <img src="./asset/3.png" alt="Show Feature">
+                    <img src="https://taskbot-sample.azurewebsites.net/static/3.png" alt="Show Feature">
                     <p>Show</p>
                 </div>
                 <div class="card">
-                    <img src="./asset/2.png" alt="Remove Feature">
+                    <img src="https://taskbot-sample.azurewebsites.net/static/2.png" alt="Remove Feature">
                     <p>Remove</p>
                 </div>
             </div>
@@ -111,11 +110,16 @@
                         </tr>
                     </tbody>
                 </table>
-                <img src="./asset/5.png" alt="Commands Feature">
+                <img src="https://taskbot-sample.azurewebsites.net/static/5.png" alt="Commands Feature">
             </div>
         </section>
 
-        <section id="contact" class="bg-black">
+        <secion id="reviews" class="bg-black">
+            <h1>Reviews</h1>
+            <review-list></review-list>
+        </secion>
+
+        <section id="contact" class="bg-white">
             <h1>Contact</h1>
             <div id="contact-detail">
                 <form action="#contact" id="contact-form">
@@ -129,8 +133,8 @@
                     <input type="submit" value="Submit">
                 </form>
                 <aside id="profile">
-                    <img src="./asset/chernando.jpg" alt="Picture of Reynaldi Chernando">
-                    <div id="profile-detail" class="bg-white">
+                    <img src="https://taskbot-sample.azurewebsites.net/static/chernando.jpg" alt="Picture of Reynaldi Chernando">
+                    <div id="profile-detail" class="bg-black">
                         <p>Reynaldi Chernando</p>
                         <div>
                             <a href="https://www.chernando.com" target="_blank">chernando.com</a>
@@ -145,7 +149,7 @@
         <aside id="qr-popup">
             <div id="qr" class="bg-white">
                 <p>Scan to add TaskBot!</p>
-                <img src="./asset/qr.png" alt="QR Code for adding TaskBot">
+                <img src="https://taskbot-sample.azurewebsites.net/static/qr.png" alt="QR Code for adding TaskBot">
             </div>
             <div id="toggle-qr">
                 <p class="bg-white">&rsaquo;</p>
@@ -153,7 +157,7 @@
         </aside>
 
     </main>
-    <footer class="bg-black">
+    <footer class="bg-white">
         <p>Copyright &copy; 2020. TaskBot Inc.</p>
         <p>Made with ♥ by TaskBot Developer.</p>
     </footer>
